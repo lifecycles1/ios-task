@@ -87,6 +87,7 @@ export default function App() {
         <Text style={styles.itemTask}>{item.task}</Text>
         <Text style={styles.itemTitle}>{item.title}</Text>
         <Text style={styles.itemDescription}>{item.description}</Text>
+        <Text style={styles.itemColorCode}>{item.colorCode}</Text>
       </View>
     );
   };
@@ -137,6 +138,11 @@ const styles = StyleSheet.create({
   itemDescription: {
     fontSize: 16,
     color: "white",
+  },
+  itemColorCode: {
+    fontSize: 16,
+    color: "white",
+    textAlign: "right",
   },
   searchInput: {
     height: 40,
